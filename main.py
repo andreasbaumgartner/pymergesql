@@ -1,6 +1,5 @@
 import csv
 import sqlite3
-import logging
 
 
 def export_csv_to_sqlite(csv_file, sqlite_file, table_name):
@@ -26,7 +25,6 @@ def export_csv_to_sqlite(csv_file, sqlite_file, table_name):
     conn.commit()
     conn.close()
     print("Data export completed successfully.")
-    logging.info("Data export completed successfully.")
 
 
 if __name__ == "__main__":
